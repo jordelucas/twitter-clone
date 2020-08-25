@@ -25,6 +25,14 @@ const Main: React.FC = () => {
         </ProfileInfo>
       </Header>
 
+      {/* <ProfilePage /> */}
+
+      <BottomMenu>
+        <HomeIcon className='active'/>
+        <SearchIcon />
+        <BellIcon />
+        <EmailIcon />
+      </BottomMenu>
     </Container>
   )
 }
