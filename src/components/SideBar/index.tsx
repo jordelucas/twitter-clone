@@ -1,6 +1,8 @@
 import React from 'react';
 
 import { Container, SearchWrapper, SearchInput, SearchIcon, Body } from './styles';
+import List from '../List'
+import FollowSuggestion from '../FollowSuggestion';
 
 const SideBar: React.FC = () => {
   return (
@@ -11,7 +13,23 @@ const SideBar: React.FC = () => {
       </SearchWrapper>
 
       <Body>
-        <p>{'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis commodi molestias est omnis praesentium, ducimus nobis, dolor enim tempore odit fugiat blanditiis? Autem et nihil debitis quae eius omnis unde.'.repeat(90)}</p>
+        <List 
+          title="Talvez você curta"
+          elements={[
+            <FollowSuggestion name="Luiz Batanero" nickname="@luizbatanero" />,
+            <FollowSuggestion name="Luke Morales" nickname="@lukemorales" />,
+            <FollowSuggestion name="Camila Magalhães" nickname="@camilaamgl" />
+          ]}
+        />  
+
+        <List 
+          title="Talvez você curta"
+          elements={[
+            <h1>teste</h1>,
+            <h1>teste</h1>,
+            <h1>teste</h1>
+          ]}
+        />  
       </Body>
     </Container>
   );
