@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, SearchWrapper, SearchInput, SearchIcon, Body } from './styles';
 import List from '../List'
 import FollowSuggestion from '../FollowSuggestion';
+import News from '../News';
 
 const SideBar: React.FC = () => {
   return (
@@ -25,9 +26,14 @@ const SideBar: React.FC = () => {
         <List 
           title="Talvez você curta"
           elements={[
-            <h1>teste</h1>,
-            <h1>teste</h1>,
-            <h1>teste</h1>
+            <News />,
+            <News />,
+            <News />,
+            <News />,
+            <News />,
+            <News />,
+            <News />,
+            <News />
           ]}
         />  
       </Body>
